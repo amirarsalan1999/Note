@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Note</title>
+</head>
+<body>
+    <!-- heading -->
+    <header id="header">
+        <h1>Note</h1>
+    </header>
+    <!-- add note -->
+    <form action="" id="form">
+        <h2>enter your note in below input</h2>
+        <div id="input-and-clearicon">
+            <input type="text" id="input-addnote" placeholder="Somthing here ...">
+            <i class="fa fa-trash" id="clear-input-i"></i>
+        </div>
+        <div id="color-container">
+            <span onclick="changeColorInput(event)" class="color" style="background-color: white;"></span>
+            <span onclick="changeColorInput(event)" class="color" style="background-color: #f1892d;"></span>
+            <span onclick="changeColorInput(event)" class="color" style="background-color: #cea0e4;"></span>
+            <span onclick="changeColorInput(event)" class="color" style="background-color: #39d5ff;"></span>
+            <span onclick="changeColorInput(event)" class="color" style="background-color: #ffbcd8;"></span>
+            <span onclick="changeColorInput(event)" class="color" style="background-color: #8effc1;"></span>
+            <span onclick="changeColorInput(event)" class="color" style="background-color: #5efaf7;"></span>
+            <span onclick="changeColorInput(event)" class="color" style="background-color: #FFCCBC;"></span>
+            <span onclick="changeColorInput(event)" class="color" style="background-color: #f6c4a3;"></span>
+            <span onclick="changeColorInput(event)" class="color" style="background-color: #d5e5e6;"></span>
+            <span onclick="changeColorInput(event)" class="color" style="background-color: #f1c40f;"></span>
+        </div>
+            <i class="fa fa-plus" id="add-note-i"></i>
+    </form>
+    <script src="./app.js"></script>
+</body>
+</html>
