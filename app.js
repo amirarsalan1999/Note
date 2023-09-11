@@ -10,15 +10,39 @@ input.addEventListener("focus" , function () {
 // clear input value
 clearIcone.addEventListener("click" , function () {
     input.value = "";
+    input.style.backgroundColor = "#ebebeb";
 })
 
 
 // change color input
-let color;
+let backColor;
 function changeColorInput (event) {
-    color = event.target.style.backgroundColor;
-    input.style.backgroundColor = color;
+    backColor = event.target.style.backgroundColor;
+    input.style.backgroundColor = backColor;
 }
 
 
-// create li element and add to ul
+// create and delete li
+
+// delete li
+function deleteNote () {
+    this.remove();
+}
+
+// create li
+let addIcon = $.getElementById("add-note-i");
+let listNote = $.getElementById("list");
+let newli;
+let newSpan;
+addIcon.addEventListener("click" , function () {
+    if(input.value != ""){
+        newli = $.createElement("li");
+        newli.setAttribute("class" , "items");
+        newli.innerHTML = input.value;
+        newli.addEventListener("click" , deleteNote)
+        newli.style.backgroundColor = backColor;
+        listNote.appendChild(newli);
+        backColor = "#ebebeb";
+    }
+    
+})

@@ -51,7 +51,7 @@ html{
     height: 1.8rem;
     padding-left: .5rem;
     border: none;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px;
 }
 
 /* clear-icon */
@@ -59,10 +59,11 @@ html{
     font-size: 1.2rem;
     background-color: #fff;
     color: rgb(0, 0, 0);
-    padding: .22rem .23rem .39rem .23rem;
-    border-radius: 0 4px 4px 0;
+    padding: .17rem .23rem .39rem .23rem;
+    border-radius: 4px;
     transition: all .2s;
 }
+
 #clear-input-i:hover{
     color: rgb(0, 0, 0, .5);
     
@@ -85,6 +86,7 @@ html{
     color: rgb(0, 0, 0, .5);
 }
 
+/* color-list */
 #color-container{
     margin-top: .5rem;
     margin-left: 3.3rem;
@@ -94,4 +96,26 @@ html{
     width: 10px;
     height: 10px;
     border-radius: 50%;
+}
+
+/* note-list */
+
+#ul-container{
+    width: 40rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+/* list */
+#list{
+    background-color: black;
+}
+
+
+.items{
+    background-color: #ebebeb;
+    text-align: center;
+    padding: .7rem;
+    margin-bottom: .1rem;
+    font-size: 1.2rem;
 }
